@@ -1,0 +1,53 @@
+# Pattern: QUASAR (Global Discovery Beacon)
+# Robots.txt for NGPC - Maximum Crawl Efficiency
+
+User-agent: *
+Allow: /
+Crawl-delay: 0
+
+# Priority Paths (Pattern: MAGNETAR - Force crawlers to important content)
+Allow: /index.html
+Allow: /sitemap.xml
+
+# Sitemap Location
+Sitemap: https://tryboy869.github.io/ngpc/sitemap.xml
+
+# Specific Bot Instructions (Pattern: EMISSION NEBULA - Viral Spread)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Social Media Crawlers (Pattern: JET RELATIVISTIC - Fast Social Propagation)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
