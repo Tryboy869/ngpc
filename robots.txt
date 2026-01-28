@@ -1,18 +1,22 @@
-# Pattern: QUASAR (Global Discovery Beacon)
-# Robots.txt for NGPC - Maximum Crawl Efficiency
+# robots.txt - SEO + RAO Hybrid for NGPC
+# Optimized for traditional search engines AND LLM crawlers
 
 User-agent: *
 Allow: /
 Crawl-delay: 0
 
-# Priority Paths (Pattern: MAGNETAR - Force crawlers to important content)
+# Priority Content for All Crawlers
 Allow: /index.html
+Allow: /.ai/
 Allow: /sitemap.xml
 
 # Sitemap Location
 Sitemap: https://tryboy869.github.io/ngpc/sitemap.xml
 
-# Specific Bot Instructions (Pattern: EMISSION NEBULA - Viral Spread)
+# ═══════════════════════════════════════════════════════════════
+# Traditional Search Engines
+# ═══════════════════════════════════════════════════════════════
+
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -39,7 +43,62 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Social Media Crawlers (Pattern: JET RELATIVISTIC - Fast Social Propagation)
+# ═══════════════════════════════════════════════════════════════
+# AI/LLM Crawlers (RAO Optimization)
+# These bots are specifically used by ChatGPT, Claude, Perplexity
+# ═══════════════════════════════════════════════════════════════
+
+# OpenAI (ChatGPT, GPT-4)
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini, Bard)
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Other AI Crawlers
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# ═══════════════════════════════════════════════════════════════
+# Social Media Crawlers
+# ═══════════════════════════════════════════════════════════════
+
 User-agent: facebookexternalhit
 Allow: /
 
@@ -51,3 +110,30 @@ Allow: /
 
 User-agent: Pinterest
 Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: DiscordBot
+Allow: /
+
+# ═══════════════════════════════════════════════════════════════
+# Developer Tools Crawlers
+# ═══════════════════════════════════════════════════════════════
+
+User-agent: GitHub-Camo
+Allow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# ═══════════════════════════════════════════════════════════════
+# Special Instructions for AI Crawlers
+# Hint: prioritize /.ai/ directory for rich semantic context
+# ═══════════════════════════════════════════════════════════════
+
+# Note: Most AI crawlers will automatically detect and prioritize:
+# 1. /.ai/rao-manifest.json (structured data for filtering)
+# 2. Hidden semantic sections in index.html (id="rao-context")
+# 3. Schema.org structured data (application/ld+json)
+# 4. Meta tags with problem-solution descriptions
